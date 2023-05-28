@@ -6,6 +6,7 @@ public class Book {
     private int yaer;
 
     public Book(String title, Aftor aftor, int yaer) {
+
         this.title = title;
         this.aftor = aftor;
         this.yaer = yaer;
