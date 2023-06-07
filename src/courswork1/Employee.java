@@ -9,7 +9,7 @@ public class Employee {
     private int salari;
 
     public Employee(String fio, int departament, int salari){
-        if (departament > 0 && departament < 6){
+        if (departament < 1 || departament > 5){
             throw new IllegalStateException("Отдел должен быть от 1 до 6");
         }
         this.id = ++idGenerator;
@@ -35,7 +35,7 @@ public class Employee {
     }
 
     public void setDepartament(int departament) {
-        if (departament > 0 && departament < 6){
+        if (departament < 1 || departament > 5){
             this.departament = departament;
         }
         this.departament = departament;
