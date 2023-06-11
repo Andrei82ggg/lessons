@@ -25,6 +25,7 @@ public class Main {
         }
         findMaxSalary();
         printFIO();
+        zadacha();
     }
 
     static void printAll() {
@@ -65,15 +66,29 @@ public class Main {
                 max = employee;
             }
         }
-        System.out.println("Сотрудник с максимальной зарплатой " +max);
+        System.out.println("Сотрудник с максимальной зарплатой " + max);
     }
-    static double average(){
+
+    static double average() {
         return (double) sum() / employees.length;
     }
-    static void printFIO(){
-        for (Employee employee : employees){
+
+    static void printFIO() {
+        for (Employee employee : employees) {
             System.out.println(employee.getFio());
         }
     }
-}
+    static void zadacha(){
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] % 2 !=0){
+                arr[i]+= 1;
+                for (i = 3; i < 7; i++) {
+                    System.out.println(i);
 
+                }
+            }
+        }
+    }
+
+   }
